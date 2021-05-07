@@ -12,6 +12,7 @@ void Timer0_Ini ( void )
     TIMSK0=0x01; /* habilita interrupcion del Timer0 */
     sei(); /* habilita interrupciones (global) */
 }
+
 uint8_t Timer0_SecFlag ( void )
 {
     if( SecFlag )
@@ -24,6 +25,7 @@ uint8_t Timer0_SecFlag ( void )
         return 0;
     }
 }
+
 ISR (TIMER0_OVF_vect)
 { /* TIMER0_OVF_vect */
     static uint16_t mSecCnt;

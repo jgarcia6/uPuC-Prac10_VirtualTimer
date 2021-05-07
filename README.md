@@ -1,2 +1,2 @@
 # uPuC-Prac9
-AVR-GCC. Timers
+AVR-GCC. Virtual Timers based on the Timer0
